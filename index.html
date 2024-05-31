@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Test API Client</title>
+
+<script type='text/javascript'>
+  function initEmbeddedMessaging() {
+    try {
+      embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+
+      embeddedservice_bootstrap.init(
+        '00DHs000003VtG9',
+        'MIAW',
+        'https://suelemoliv-240111-119-demo.my.site.com/ESWMIAW1705938368918',
+        {
+          scrt2URL: 'https://suelemoliv-240111-119-demo.my.salesforce-scrt.com'
+        }
+      );
+    } catch (err) {
+      console.error('Error loading Embedded Messaging: ', err);
+    }
+  };
+</script>
+<script type='text/javascript' src='https://suelemoliv-240111-119-demo.my.site.com/ESWMIAW1705938368918/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+</head>
+<body>
+<h1> Hi there </h1>
+</body>
+</html>
